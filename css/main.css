@@ -1,0 +1,582 @@
+/*GENERAL SETTİNGS*/
+
+@font-face {
+    font-family: "Raleway";
+    src: url{"../fonts/Raleway-Regular.ttf"}
+}
+
+body{
+    background: #ffffff;
+    color: #3f3f3f;
+    font: 14px / 28px;
+    font-family: "Raleway", arial;
+}
+
+h1{
+    font-size: 50px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.sectionHeader{
+    background: green;
+    border-bottom: 6px solid #000;
+    height: 60px;
+    color: white;
+    display: inline-block;
+    line-height: 60px;
+    font-size: 24px;
+    padding: 5px 40px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 16px;
+    color: blue;
+    transition: all .5s ease;
+}
+
+.sectionArea{
+    padding: 80px;
+    
+}
+
+/*GRID SETTİNGS*/
+
+/*container bir class olduğu için yazarken başına . koyduk..*/
+.container{
+    width: 90%;
+    margin: 0 auto;/*sayfayı ortalaması için*/
+    display: flex;/*container içindeki yapılar yanyana gelsin diye..*/
+}
+
+/*HOME SETTİNGS*/
+
+header .logo{
+    margin-right: auto;
+}
+
+header .logo img{
+    display: block;
+    height: 70px;
+}
+
+.menu li{
+    float: left;/*seçenekler yan yana gelmesi için..*/
+}
+
+.menu li a{
+    padding: 27px 17px;
+    display: block;/*yukarıdan ve aşağıdan verdiğimiz boşlukları uygulayabilmek için*/
+    text-decoration: none;
+    letter-spacing: 2px;/*harfler arası boşluk için..*/
+    color: blue;
+}
+
+.menu li:hover a{
+    background: green;
+    color: #fff;
+}
+
+/*id lerde başına # işareti koyuyoruz..*/
+#mainSlider{
+    height: 500px;
+    background: url("../img/KASTAMONU.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.slider{
+    width: 100%;
+}
+
+#mainCaption{
+    height: 500px;
+    /*eklenen büyük resmi bir miktar karartıyor..*/
+    background: rgba(0,0,0, .5);
+}
+
+.caption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+}
+
+.featuresTop{
+    text-align: center;
+}
+
+.item{
+    padding: 10px 30px;
+}
+
+.zoom{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+.zoom img{
+    display: block;/*inline block alanının tamamını kapsaması için..*/
+    width: 100%;
+    height: 6%;
+    transition: all .5s ease;
+}
+
+.item .itemText{
+    text-align: center;
+    padding: 10px;
+    border: 1px solid green;
+}
+
+.item:hover .zoom img{
+    transform: scale(1.25);
+}
+
+.item:hover h3{
+    color: white;
+}
+
+.item:hover .itemText{
+    background: green;
+    color: white;
+    transition: all .5s ease;
+}
+
+.featuresBody .container{
+    justify-content: space-between;
+}
+
+.col3{
+    flex-grow: 1;
+    width: 33.33%;
+}
+
+.btnDetails{
+    color: blue;
+    padding: 2px 10px;
+    text-decoration: none;
+    border: 1px solid green;
+    transition: all .5s ease;
+}
+
+.item:hover .btnDetails{
+    color: white;
+    border:1px solid white;
+}
+
+.itemText p{
+    margin: 20px 0;
+}
+
+footer{
+    background: green;
+    text-align: center;
+}
+
+.footerItem{
+    padding: 20px;
+}
+
+footer h3{
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+footer .fa{
+    font-size: 30px;
+    color: antiquewhite;
+    line-height: 50px;
+    transition: .3 ease;
+}
+
+footer .fa:hover{
+    color: white;
+}
+
+footer p{
+    color:antiquewhite;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.footerLinks a{
+    text-decoration: none;
+    color: antiquewhite;
+    letter-spacing: 2px;
+    transition: .3 ease;
+    line-height: 30px;
+}
+
+.footerLinks a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.socialLinks li{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+
+footer h1{
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+}
+
+/*Sehrim Settings*/
+
+#sehrimSlider{
+    height: 500px;
+    background: url("../img/kastamonuslider.png") center center no-repeat;
+    background-size: cover;
+}
+
+#sehrimCaption{
+    height: 500px;
+    /*eklenen büyük resmi bir miktar karartıyor..*/
+    background: rgba(0,0,0, .5);
+}
+
+.informationBody .col2{
+    display: flex;
+}
+
+.infImage{
+    width: 40%;
+}
+
+.infImage img{
+    width: 100%;
+    height: auto;
+}
+
+.infText{
+    width: 60%;
+}
+
+h4{
+    color: blue;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.infText a{
+    padding-top: 10%;
+    padding-right: 5%;
+    float: right;
+    text-decoration: none;
+    color: green;
+}
+
+.infText a:hover{
+    text-decoration: underline;
+}
+
+/*eğitim settings*/
+
+.educationTop{
+    text-align: center;
+}
+
+#education{
+    background-color: aliceblue;
+}
+
+.educationBody .EduContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+
+.EduContainer .date{
+    text-align: center;
+    background-color: lightblue;
+    width: 40%;
+}
+
+.EduContainer .date p{
+    font-size: 30px;
+    letter-spacing: 2px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.EduContainer .eduClass{
+    margin-left: 10px;
+}
+
+.EduContainer .eduClass p{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*mirasımız settings*/
+
+body, html{
+		width: 100%;
+		height: 100%;	
+		margin: 0;
+		font-family: 'Just Another Hand', cursive;
+		overflow-X: hidden;/* optional */
+}
+
+#i1, #i2, #i3, #i4, #i5, #i6{ display: none;}
+
+.mirasContainer{
+		margin: 0 auto;
+		margin-top: 20px;
+		position: relative;
+		width: 70%;
+		height: 0;
+		padding-bottom: 38%;
+	    user-select: none;
+		background-color: white; 
+}
+
+.mirasContainer h1{
+    text-align: center;
+    color: white;
+}
+
+.mirasContainer .slide_img{
+		position: absolute;
+		width: 100%;;
+		height: 100%;
+}
+
+.mirasContainer .slide_img img{
+    width: inherit;
+    height: inherit;
+}
+
+ .pre, .next{
+		width: 12%;
+		height: inherit;
+		position: absolute;
+		top:0; 
+		background-color: rgba(88, 88, 88,.2);
+		color:rgba(244, 244, 244,.9);
+		z-index: 99;
+		transition: .45s;
+		cursor: pointer;
+		text-align: center;
+}
+
+.next{right:0;}
+
+.pre{left:0;}
+
+label span{
+    position: absolute;
+    font-size: 100pt;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.pre:hover, .next:hover{
+    transition: .3s;
+    background-color: rgba(88, 88, 89,.8);
+    color: #ffffff; 
+}
+
+.container #nav{
+	width: 100%;
+	bottom: 12%;
+	height: 11px;
+	position: absolute;
+	text-align: center;
+	z-index: 99;
+	cursor: default;
+}
+
+#nav_slide .dots{
+	top: -5px;
+	width: 18px;
+	height: 18px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+	transition: .4s;
+}
+
+#nav_slide .dots:hover {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.9);
+	transition: .25s
+}
+
+.slide_img{z-index: -1;}
+
+#i1:checked ~ #one  ,
+#i2:checked ~ #two  ,
+#i3:checked ~ #three,
+#i4:checked ~ #four,
+#i5:checked ~ #five,
+#i6:checked ~ #six{
+     z-index: 9; animation: scroll 1s ease-in-out;
+}
+
+#i1:checked  ~  #nav #dot1,
+#i2:checked  ~  #nav #dot2,
+#i3:checked  ~  #nav #dot3,
+#i4:checked  ~  #nav #dot4,
+#i5:checked  ~  #nav #dot5,
+#i6:checked  ~  #nav #dot6{
+     background-color: rgba(255,255,255,.9);
+}	
+
+/*taskopru Settings*/
+
+#taskopruSlider{
+    height: 500px;
+    background: url("../img/taskopru.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+#taskopruCaption{
+    height: 500px;
+    /*eklenen büyük resmi bir miktar karartıyor..*/
+    background: rgba(0,0,0, .5);
+}
+
+.taskopruBody{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*safranbolu settings*/
+
+#safranboluSlider{
+    height: 500px;
+    background: url("../img/safranbolu.jpeg") center center no-repeat;
+    background-size: cover;
+}
+
+#safranboluCaption{
+    height: 500px;
+    /*eklenen büyük resmi bir miktar karartıyor..*/
+    background: rgba(0,0,0, .5);
+}
+
+.safranboluBody{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*gideroskoyu Settings*/
+
+#gideroskoyuSlider{
+    height: 500px;
+    background: url("../img/gideroskoyu.png") center center no-repeat;
+    background-size: cover;
+}
+
+#gideroskoyuCaption{
+    height: 500px;
+    /*eklenen büyük resmi bir miktar karartıyor..*/
+    background: rgba(0,0,0, .5);
+}
+
+.gideroskoyuBody{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*locvadisi Settings*/
+
+#locvadisiSlider{
+    height: 500px;
+    background: url("../img/locvadisi.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+#locvadisiCaption{
+    height: 500px;
+    /*eklenen büyük resmi bir miktar karartıyor..*/
+    background: rgba(0,0,0, .5);
+}
+
+.locvadisiBody{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*vallakanyonu Settings*/
+
+#vallakanyonuSlider{
+    height: 500px;
+    background: url("../img/vallakanyonu.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+#vallakanyonuCaption{
+    height: 500px;
+    /*eklenen büyük resmi bir miktar karartıyor..*/
+    background: rgba(0,0,0, .5);
+}
+
+.vallakanyonuBody{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*catakkanyonu Settings*/
+
+#catakkanyonuSlider{
+    height: 500px;
+    background: url("../img/catakkanyonu.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+#catakkanyonuCaption{
+    height: 500px;
+    /*eklenen büyük resmi bir miktar karartıyor..*/
+    background: rgba(0,0,0, .5);
+}
+
+.catakkanyonuBody{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*hakkimda settings*/
+
+#hakkimdaSlider{
+    height: 500px;
+    background: url("../img/hakkimda.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+#hakkimdaCaption{
+    height: 500px;
+    /*eklenen büyük resmi bir miktar karartıyor..*/
+    background: rgba(0,0,0, .2);
+}
+
+.hakkimdaBody{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
